@@ -1,6 +1,6 @@
 # Portafolio Personal
 
-Este es mi portafolio personal, desarrollado con **Angular**, **Ng-Zorro** y desplegado en **Vercel**. Este proyecto tiene como objetivo mostrar mis habilidades tecnicas, experiencia laboral y proyectos previos. Ademas, el portafolio consume APIs externas, como la API de **GitHub**, para mostrar los repositorios publicos asociados a mi cuenta.
+Este es mi portafolio personal, desarrollado con **Angular**, **Ng-Zorro** y desplegado en **Vercel**. Este proyecto tiene como objetivo mostrar mis habilidades tecnicas, experiencia laboral y proyectos previos. Ademas, el portafolio consume APIs externas, como la API de **GitHub**, para mostrar los repositorios publicos asociados a mi cuenta..
 
 ## Caracteristicas
 
