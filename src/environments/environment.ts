@@ -1,6 +1,6 @@
 
 export const environment = {
   production: false,
-  apiUrl: process.env['API_URL'] || 'hdddd',  // Usar corchetes
-  apiKey: process.env['API_KEY'] || 'aaa'  // Usar corchetes
+  API_URL: process.env['API_URL'] || 'hdddd',  // Usar corchetes
+  API_KEY: process.env['API_KEY'] || 'aaa'  // Usar corchetes
 };
