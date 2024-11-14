@@ -32,7 +32,7 @@ export class GitHubService {
     console.log(this.apiUrl)
     const url = `${this.apiUrl}/users/${username}/repos`;
     const headers = new HttpHeaders({
-      'Authorization': `token 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`,  // Usa la apiKey desde environment
+      'Authorization': `token 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`,  // Usa la apiKey desde environment
     });
 
     return this.http.get<Repo[]>(url, { headers });
@@ -42,7 +42,7 @@ export class GitHubService {
   getReadme(repoFullName: string): Observable<any> {
     const url = `${this.apiUrl}/repos/${repoFullName}/readme`;
     const headers = new HttpHeaders({
-      'Authorization': `token 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`,  // Usa la apiKey desde environment
+      'Authorization': `token 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`,  // Usa la apiKey desde environment
     });
 
     return this.http.get<any>(url, { headers });
