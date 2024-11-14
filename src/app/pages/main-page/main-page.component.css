@@ -1,0 +1,21 @@
+nz-layout {
+    background-color: rgb(34, 35, 46);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Asegura que los elementos estén alineados desde arriba */
+    align-items: center;
+    padding-top: 3%; /* Espacio desde el top para crear separación con el título */
+}
+
+app-main-title {
+    margin-top: 0;  /* Elimina el margen superior adicional */
+    text-align: center; /* Asegura que el título esté centrado */
+    margin-bottom: 2%;
+}
+
+app-git-proyect {
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+    margin-top: 0;  /* No es necesario margen superior, la separación proviene del título */
+}

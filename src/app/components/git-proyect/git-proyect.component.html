@@ -1,0 +1,43 @@
+<div class="repos-list">
+  <!-- Contenedor de las filas de proyectos -->
+  <div class="repo-rows">
+    <div class="repo-row" *ngFor="let row of getRows()">
+      <div *ngFor="let repo of row" class="repo-item">
+        <nz-card [nzHoverable]="true">
+          <!-- Meta de la tarjeta con el nombre del repositorio y la descripción -->
+          <ng-container *nzCardMeta>
+            <nz-card-meta
+              [nzTitle]="repo.name"
+              [nzDescription]="repo.description || 'No description available'">
+            </nz-card-meta>
+          </ng-container>
+
+          <!-- Siempre mostrar el ícono de GitHub (en lugar de una imagen de portada) -->
+          <div class="github-icon">
+            <a [href]="repo.html_url" target="_blank">
+              <i class="fab fa-github" style="font-size: 50px; color: #ffffff;"></i>
+            </a>
+            <!-- Mostrar el nombre del repositorio debajo del ícono -->
+            <h3 class="repo-name">
+              <a [href]="repo.html_url" target="_blank">{{ repo.name }}</a>
+            </h3>
+          </div>
+
+          <!-- Mostrar el contenido del README.md -->
+          <div *ngIf="repo.readmeContent">
+            <p>{{ repo.readmeContent | slice:0:200 }}...</p> <!-- Muestra los primeros 200 caracteres -->
+            <a [href]="repo.html_url + '/blob/main/README.md'" target="_blank">Leer más</a>
+          </div>
+
+          <div class="tech-languages">
+            <span *ngIf="repo.language">
+              <i [class]="getTechIcon(repo.language)"></i> {{ repo.language }}
+            </span>
+          </div>
+
+          <p><strong>Estrellas:</strong> {{ repo.stargazers_count }} | <strong>Forks:</strong> {{ repo.forks_count }}</p>
+        </nz-card>
+      </div>
+    </div>
+  </div>
+</div>

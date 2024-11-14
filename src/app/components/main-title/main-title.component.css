@@ -1,0 +1,75 @@
+.content {
+  display: flex; 
+  flex-direction: column;  
+  justify-content: center; 
+  align-items: center;     
+  text-align: center;       
+}
+.content h1{
+  font-size: 3rem;
+  font-weight: 600;
+  color: #fd5858d8;
+  margin: 3px;
+  transition: ease 0.3s;
+}
+
+
+.animated-text{
+  font-size: 34px;
+  font-weight: 600;
+  min-width: 280px;
+}
+
+.animated-text span{
+  position: relative;
+}
+
+.animated-text span::before{
+  content: "Front-End";
+  color: #fd5858d8;
+  animation: words 20s infinite;
+}
+
+.animated-text span::after{
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: rgb(34, 35, 46);
+  border-left: 2px solid #fd5858d8;
+  right: -8px;
+  animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+  to{
+      border-left: 2px solid #ff7f5000;
+  }
+}
+
+@keyframes words {
+  0%,20%{
+      content: "Front-End";
+  }
+  21%,40%{
+      content: "Back-End";
+  }
+  41%,60%{
+      content: ".Net Developer";
+  }
+  61%,80%{
+      content: "Web Developer";
+  }
+  81%,100%{
+      content: "Database";
+  }
+}
+
+@keyframes typing {
+  10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+      width: 0;
+  }
+  5%,20%,25%,40%,45%,60%,65%,80%,85%{
+      width: calc(100% + 8px);
+  }
+}
