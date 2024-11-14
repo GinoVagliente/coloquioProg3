@@ -1,5 +1,5 @@
 export const environment = {
   production: false,
-  apiUrl: 'https://default-api-url.com',  // Valor por defecto
-  apiKey: 'default-api-key'  // Valor por defecto
+  apiUrl: 'https://default-api-url.comaaaa',  // Valor por defecto
+  apiKey: 'default-api-keyaaaaaaaaa'  // Valor por defecto
 };
