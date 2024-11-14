@@ -1,6 +1,8 @@
 <div class="repos-list">
   <!-- Contenedor de las filas de proyectos -->
   <div class="repo-rows">
+
+    <!-- Contenedor para las tarjetas -->
     <div class="repo-row" *ngFor="let row of getRows()">
       <div *ngFor="let repo of row" class="repo-item">
         <nz-card [nzHoverable]="true">

@@ -1,21 +1,81 @@
+/* Estilo para nz-layout */
 nz-layout {
     background-color: rgb(34, 35, 46);
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Asegura que los elementos estén alineados desde arriba */
+    justify-content: flex-start;
     align-items: center;
-    padding-top: 3%; /* Espacio desde el top para crear separación con el título */
-}
-
-app-main-title {
-    margin-top: 0;  /* Elimina el margen superior adicional */
-    text-align: center; /* Asegura que el título esté centrado */
-    margin-bottom: 2%;
-}
-
-app-git-proyect {
-    width: 80%;
-    max-width: 1200px;
+    height: 100vh;
+  }
+  
+  h2, h3, h4 {
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  /* Párrafos */
+  p {
+    color: #D1D1D1;
+    line-height: 1.6;
+  }
+  
+  /* Estilo para los ítems de lista (li) */
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    background-color: rgb(46, 47, 61);
+    margin-bottom: 10px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: #D1D1D1;
+    font-size: 16px;
+  }
+  
+  li strong {
+    color: white;
+  }
+  
+  /* Contenedor del botón */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Estilo del botón */
+  button {
+    background-color: transparent;
+    border: 2px solid #1890ff;
+    color: white;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* Efecto hover para el botón */
+  button:hover {
+    background-color: #1890ff;
+    border-color: #1890ff;
+  }
+  
+  /* Estilos para los encabezados */
+  app-main-title {
+    margin-top: 0;
     text-align: center;
-    margin-top: 0;  /* No es necesario margen superior, la separación proviene del título */
-}
+    margin-bottom: 2%;
+  }
+  
+  /* Estilo del footer */
+  app-footer {
+    width: 100%;
+    background-color: rgb(24, 25, 36);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    position: relative;
+  }
+  

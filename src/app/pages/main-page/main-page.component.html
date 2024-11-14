@@ -1,4 +1,41 @@
 <nz-layout>
-    <app-main-title></app-main-title>
-    <app-git-proyect></app-git-proyect>
+  <app-footer></app-footer> <!-- Colocado arriba como si fuera un header -->
+  <app-main-title></app-main-title>
+  
+  <div class="content">
+    <h2>Aptitudes Técnicas</h2>
+    <ul>
+      <li><strong>Lenguajes de Programación:</strong> C#, JavaScript, Python</li>
+      <li><strong>Bases de Datos:</strong> SQL, NoSQL</li>
+      <li><strong>Gestión de Bases de Datos:</strong> SQL Server, MySQL, PostgreSQL, MongoDB</li>
+      <li><strong>Control de Versiones:</strong> Git, GitHub</li>
+      <li><strong>Desarrollo Móvil:</strong> Xamarin</li>
+      <li><strong>API Restful:</strong> Creación y consumo de APIs, uso de APIs de IA</li>
+      <li><strong>Desarrollo Web:</strong> HTML, CSS, React, Angular</li>
+    </ul>
+
+    <h2>Aptitudes Laborales</h2>
+    <ul>
+      <li><strong>Resolución de Problemas:</strong> Capacidad para analizar y solucionar problemas complejos</li>
+      <li><strong>Trabajo en Equipo:</strong> Colaboración efectiva en entornos multidisciplinarios</li>
+      <li><strong>Adaptabilidad:</strong> Capacidad para aprender rápidamente nuevas tecnologías y herramientas</li>
+    </ul>
+
+    <h2>Experiencia Laboral</h2>
+    <h3>Maser Informática (Marzo 2024 – Actualidad)</h3>
+    <h4>Desarrollador de Sistemas Administrativos</h4>
+    <p>Experiencia en migración de Sistemas Administrativos de Visual Basic a .NET, con nuevas funcionalidades y bases de datos SQL Server.</p>
+
+    <h4>Desarrollador de Aplicaciones Móviles</h4>
+    <p>Desarrollo de aplicaciones móviles multiplataforma usando Xamarin, con interfaces de usuario intuitivas en iOS y Android.</p>
+
+    <h2>Formación Profesional</h2>
+    <h3>Analista en Sistemas de Computación - Instituto Leibnitz (2022-2024)</h3>
+    <p>Especialización en el análisis, diseño e implementación de soluciones tecnológicas. Compromiso con la actualización continua y el trabajo en equipo interdisciplinario.</p>
+
+    <!-- Botón de NgZorro para redirigir a la página de GitHub -->
+    <div class="button-container">
+      <button nz-button nzType="default" (click)="redirectToGitPage()">Ver Proyecto en GitHub</button>
+    </div>
+  </div>
 </nz-layout>

@@ -29,8 +29,6 @@ export class GitHubService {
   // Obtener los repositorios de un usuario de GitHub
   getRepos(username: string): Observable<Repo[]> {
     
-    console.log(environment.API_URL);  // Imprime la URL de la API configurada
-    console.log(environment.API_KEY);  // Imprime la clave de la API configurada
     const url = `${this.apiUrl}/users/${username}/repos`;
     const headers = new HttpHeaders({
       'Authorization': `token ${this.apiKey}`,  // Usa la apiKey desde environment
@@ -41,8 +39,6 @@ export class GitHubService {
 
   // Obtener el contenido del README de un repositorio
   getReadme(repoFullName: string): Observable<any> {
-    console.log(environment.API_URL);  // Imprime la URL de la API configurada
-    console.log(environment.API_KEY);  // Imprime la clave de la API configurada
     const url = `${this.apiUrl}/repos/${repoFullName}/readme`;
     const headers = new HttpHeaders({
       'Authorization': `token ${this.apiKey}`,  // Usa la apiKey desde environment

@@ -1,0 +1,21 @@
+app-git-proyect {
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+}
+
+app-footer {
+    width: 100%;
+    background-color: rgb(24, 25, 36);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    position: relative;
+}
+
+nz-layout {
+    background-color: rgb(34, 35, 46);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}

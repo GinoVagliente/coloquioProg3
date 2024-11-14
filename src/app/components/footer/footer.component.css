@@ -1,0 +1,39 @@
+  .footer-content {
+    display: flex;
+    height: 100%;
+    font-size: 18px;
+    margin-left: 3%;
+  }
+
+  /* Efecto de iluminación mejorado con más pasos */
+  @keyframes iluminar {
+    0% {
+      color: rgb(145, 145, 145);
+      transform: scale(1);
+      opacity: 0.7;
+    }
+
+
+    50% {
+      color: rgb(255, 255, 255);
+      /* Blanco */
+      transform: scale(1.1);
+      opacity: 1;
+    }
+
+
+    100% {
+      color: rgb(145, 145, 145);
+      /* Gris original */
+      transform: scale(1);
+      opacity: 0.7;
+    }
+  }
+
+  /* Aplica la animación al footer */
+  .footer {
+    color: rgb(145, 145, 145);
+    font-family: "Quicksand", sans-serif;
+    font-style: small ;
+    animation: iluminar 2s ease-in-out infinite;
+  }
