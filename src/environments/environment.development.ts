@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
   API_URL: 'https://api.github.com',  // Define el valor por defecto para desarrollo
-  API_KEY: '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'                  // Define el valor por defecto para desarrollo
+  API_KEY: ''                  // Define el valor por defecto para desarrollo
 };
