@@ -1,27 +1,30 @@
-# Portafolio
+# Portafolio Personal
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.2.
+Este es mi portafolio personal, desarrollado con **Angular**, **Ng-Zorro** y desplegado en **Vercel**. Este proyecto tiene como objetivo mostrar mis habilidades técnicas, experiencia laboral y proyectos previos. Además, el portafolio consume APIs externas, como la API de **GitHub**, para mostrar los repositorios públicos asociados a mi cuenta.
 
-## Development server
+## Características
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Diseño responsivo**: El portafolio es completamente adaptativo a diferentes tamaños de pantalla, proporcionando una experiencia fluida tanto en dispositivos móviles como en escritorios.
+- **Integración con GitHub API**: Se utiliza la API de GitHub para mostrar mis repositorios de código público.
+- **Despliegue en Vercel**: El proyecto está alojado en **Vercel** para acceso rápido y confiable.
+- **Interactividad**: El portafolio incluye botones y elementos interactivos que redirigen a mis proyectos o repositorios.
 
-## Code scaffolding
+## Características Técnicas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Lenguajes de Programación**: Angular, TypeScript
+- **Framework**: Angular (standalone components)
+- **Estilos**: SCSS, CSS con diseño responsivo
+- **API utilizada**: GitHub API
+- **Despliegue**: Vercel
 
-## Build
+## Instrucciones para Ejecutarlo Localmente
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Para ejecutar este proyecto de manera local, sigue estos pasos:
 
-## Running unit tests
+### 1. Clonar el repositorio
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Primero, clona este repositorio en tu máquina local:
 
-## Running end-to-end tests
+```bash
+git clone https://github.com/GinoVagliente/coloquioProg3
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
