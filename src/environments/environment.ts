@@ -1,6 +1,5 @@
-
 export const environment = {
   production: false,
-  API_URL: process.env['API_URL'] || 'hdddd',  // Usar corchetes
-  API_KEY: process.env['API_KEY'] || 'aaa'  // Usar corchetes
+  API_URL: 'https://dev-api.example.com',  // Define el valor por defecto para desarrollo
+  API_KEY: 'dev-api-key'                  // Define el valor por defecto para desarrollo
 };

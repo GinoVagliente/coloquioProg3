@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  API_URL: process.env['API_URL'] || 'https://default-api-url.comdwadwadwa',  // Usar corchetes
-  API_KEY: process.env['API_KEY'] || 'default-api-keydwadwadwa'  // Usar corchetes
+  API_URL: 'https://prod-api.example.com',  // URL de la API para producción
+  API_KEY: 'prod-api-key'                  // Clave API para producción
 };
