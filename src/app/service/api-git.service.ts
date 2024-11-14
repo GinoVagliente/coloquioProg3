@@ -20,17 +20,19 @@ interface Repo {
 export class GitHubService {
   // Usa las variables del archivo de entorno
   private apiUrl = environment.API_URL;  // Accede a la URL desde environment
+  private apiKey = environment.API_KEY;
 
-private part1 = "Oo8OcmQ5IJfeWz1IBpvwyNy3i01Sd"
-private part2 = "ghp_QT2o2Fy"
+
+
   constructor(private http: HttpClient) { }
 
   // Obtener los repositorios de un usuario de GitHub
   getRepos(username: string): Observable<Repo[]> {
-    
+    console.log(this.apiKey);
+    console.log(this.apiUrl);
     const url = `${this.apiUrl}/users/${username}/repos`;
     const headers = new HttpHeaders({
-      'Authorization': `token ${this.part2}${this.part1}`,  // Usa la apiKey desde environment
+      'Authorization': `token ${this.apiKey}`,  // Usa la apiKey desde environment
     });
 
     return this.http.get<Repo[]>(url, { headers });
@@ -40,7 +42,7 @@ private part2 = "ghp_QT2o2Fy"
   getReadme(repoFullName: string): Observable<any> {
     const url = `${this.apiUrl}/repos/${repoFullName}/readme`;
     const headers = new HttpHeaders({
-      'Authorization': `token ${this.part2}${this.part1}`,  // Usa la apiKey desde environment
+      'Authorization': `token ${this.apiKey}`,  // Usa la apiKey desde environment
     });
 
     return this.http.get<any>(url, { headers });
