@@ -28,6 +28,9 @@ export class GitHubService {
 
   // Obtener los repositorios de un usuario de GitHub
   getRepos(username: string): Observable<Repo[]> {
+    
+    console.log(environment.apiUrl);  // Imprime la URL de la API configurada
+    console.log(environment.apiKey);  // Imprime la clave de la API configurada
     const url = `${this.apiUrl}/users/${username}/repos`;
     const headers = new HttpHeaders({
       'Authorization': `token ${this.apiKey}`,  // Usa la apiKey desde environment
